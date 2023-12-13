@@ -1,0 +1,32 @@
+.container{
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .price{
+    border-top: 1px solid rgb(187, 185, 185);
+    padding-top: 10px;
+  }
+  .content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  img{
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 22px;
+  }
+  .text{
+    width: 70%;
+  }
+  .text-content{
+    font-size: 13px;
+    padding-bottom: 0;
+  }
+  .icon-close{
+    font-size: 17px; 
+    padding-top: 10px;
+    padding-right: 7px;
+  }

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/detail-tour"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Thinh Travel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Họ & tên:</ion-label>
+    <ion-input [(ngModel)]="username" name="username" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ngày sinh:</ion-label>
+    <ion-input [(ngModel)]="dob" name="dob" type="date"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Số điện thoại:</ion-label>
+    <ion-input [(ngModel)]="phoneNumber" name="phoneNumber" type="tel"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <strong>Thẻ:</strong>
+    <ion-select justify="end" [(ngModel)]="selectedBank">
+      <ion-select-option value="VietinBank">VietinBank</ion-select-option>
+      <ion-select-option value="Agribank">Agribank</ion-select-option>
+      <ion-select-option value="Vietcombank">Vietcombank</ion-select-option>
+      <ion-select-option value="PVcomBank">PVcomBank</ion-select-option>
+      <ion-select-option value="Sacombank">Sacombank</ion-select-option>
+      <ion-select-option value="BIDV">BIDV</ion-select-option>
+      <ion-select-option value="MBBank">MBBank</ion-select-option>
+      <ion-select-option value="Techcombank">Techcombank</ion-select-option>
+      <ion-select-option value="TPBank">TPBank</ion-select-option>
+      <ion-select-option value="ACB">ACB</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Số tài khoản:</ion-label>
+    <ion-input [(ngModel)]="amount" name="amount" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ghi chú:</ion-label>
+    <ion-input [(ngModel)]="note" name="note" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Số tiền thanh toán 30% vé:  360.000 VNĐ</ion-label>
+  </ion-item>
+
+  <ion-button expand="block" (click)="calculatePayment()">Thanh toán</ion-button>
+
+  <div class="notification-panel" *ngIf="showNotification">
+    <div class="notification-container">
+      <div class="notification-message">
+        {{ notificationMessage }}
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="Heading ion-padding">
+      <h1>Tao tai khoan</h1>
+      <p>Bắt đầu với chúng tôi</p>
+    </div>
+    <div class="login-from ion-padding">
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Tên</ion-label>
+          <ion-input type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Mật khẩu</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class="action-button ion-padding">
+      <ion-button expand="block" size="large" class="login-button" (click)="signup()">Tạo tài khoản</ion-button>
+    </div>
+  </div>
+</ion-content>

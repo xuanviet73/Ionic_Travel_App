@@ -1,0 +1,15 @@
+ion-content {
+    --background: var(--ion-color-dark) url('../../assets/imgs/login.jpg') no-repeat center center/cover;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .heading{
+    color: #ffffff;
+    transform: translateY(60vh);
+    font-size: 35px;
+    font-weight: bold;
+    ion-button{
+      border-radius: 40%;
+    }
+  }

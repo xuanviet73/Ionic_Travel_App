@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="Heading ion-padding">
+      <h1>Thinh Travel</h1>
+      <p>Đăng nhập để tiếp tục</p>
+    </div>
+    <div class="login-from ion-padding">
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Mật khẩu</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class="action-button ion-padding">
+      <ion-button expand="block" class="login-button" size="large" (click)="login()">Đăng nhập</ion-button>
+      <p>Bạn chưa có tài khoản</p>
+      <ion-button expand="block" class="signup-button" size="large" fill="outline" routerLink="/signup">Đăng ký</ion-button>
+    </div>
+  </div>
+</ion-content>

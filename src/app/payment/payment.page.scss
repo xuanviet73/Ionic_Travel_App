@@ -1,0 +1,40 @@
+ion-header {
+  ion-toolbar {
+    ion-title {
+      color: #00a46c; 
+    }
+    ion-buttons{
+      color: #00a46c;
+    }
+  }
+}
+
+/* Styling for the ion-content */
+ion-content {
+  --ion-background-color: #f0f0f0; 
+  padding: 10px;
+
+  ion-item {
+    margin-bottom: 10px; 
+  }
+
+  ion-label {
+    font-weight: bold; 
+  }
+
+  ion-select {
+    ion-label {
+      font-weight: bold;
+    }
+  }
+
+  ion-button {
+    color: #fff; 
+  }
+}
+
+.notification-container {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}

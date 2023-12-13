@@ -1,20 +1,200 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header class="ion-no-border ion-padding-horizontal">
+  <ion-toolbar color="light">
+    <ion-title mode="md">Hi, User X</ion-title>
+    <ion-buttons slot="end">
+      <ion-fab-button size="small" color="white">
+        <ion-icon name="notifications-outline" color="primary"></ion-icon>
+      </ion-fab-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-avatar>
+        <ion-img src="assets/imgs/user1.png"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content  overflow-scroll="true">
+  <section class="home">
+      <div class="box-header">
+          <div class="box-header-text">
+              Bạn muốn đi đâu nào ?
+          </div>
+          <div class="box-header-search">
+              <input type="text">
+              <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="box-header-menu">
+              <div class="box-header-item">
+                  Danh sách
+              </div>
+              <div class="box-header-item">
+                  Nổi bật
+              </div>
+              <div class="box-header-item">
+                  Gần đây
+              </div>
+              <div class="box-header-item">
+                  Khuyến mãi
+              </div>
+          </div>
+      </div>
+      <div class="box-body">
+        <p class="box-list-tour-header">Danh sách tour</p>
+                  <div class="wide-as-needed" routerLink="/detail-tour">
+                    <div class="box-item-tour">
+                      <img src="assets/imgs/login.jpg" alt="">
+                     
+                      <div class="box-item-tour-content">
+                          <p class="box-item-tour-title">
+                            Rừng thông Đà Lạt
+                          </p>
+                        <p class="box-item-tour-text">
+                          Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                        </p>
+                          
+                      </div>
+                    </div>
+                    <div class="box-item-tour">
+                      <img src="assets/imgs/login.jpg" alt="">
+                     
+                      <div class="box-item-tour-content">
+                          <p class="box-item-tour-title">
+                            Rừng thông Đà Lạt
+                          </p>
+                        <p class="box-item-tour-text">
+                          Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                        </p>
+                          
+                      </div>
+                    </div>
+                    <div class="box-item-tour">
+                      <img src="assets/imgs/login.jpg" alt="">
+                     
+                      <div class="box-item-tour-content">
+                          <p class="box-item-tour-title">
+                            Rừng thông Đà Lạt
+                          </p>
+                        <p class="box-item-tour-text">
+                          Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                        </p>
+                          
+                      </div>
+                    </div>
+                   </div>
+          <p class="box-list-tour-header">Tour nổi bật</p>
+          <div class="wide-as-needed">
+            <div class="box-item-tour">
+              <img src="assets/imgs/login.jpg" alt="">
+             
+              <div class="box-item-tour-content">
+                  <p class="box-item-tour-title">
+                    Rừng thông Đà Lạt
+                  </p>
+                <p class="box-item-tour-text">
+                  Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                </p>
+                  
+              </div>
+            </div>
+            <div class="box-item-tour">
+              <img src="assets/imgs/login.jpg" alt="">
+             
+              <div class="box-item-tour-content">
+                  <p class="box-item-tour-title">
+                    Rừng thông Đà Lạt
+                  </p>
+                <p class="box-item-tour-text">
+                  Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                </p>
+                  
+              </div>
+            </div>
+            <div class="box-item-tour">
+              <img src="assets/imgs/login.jpg" alt="">
+             
+              <div class="box-item-tour-content">
+                  <p class="box-item-tour-title">
+                    Rừng thông Đà Lạt
+                  </p>
+                <p class="box-item-tour-text">
+                  Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                </p>
+                  
+              </div>
+            </div>
+           </div>
+          <p class="box-list-tour-header">Tìm kiếm gần đây</p>
+          <div class="wide-as-needed">
+            <div class="box-item-tour">
+              <img src="assets/imgs/login.jpg" alt="">
+             
+              <div class="box-item-tour-content">
+                  <p class="box-item-tour-title">
+                    Rừng thông Đà Lạt
+                  </p>
+                <p class="box-item-tour-text">
+                  Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                </p>
+                  
+              </div>
+            </div>
+            <div class="box-item-tour">
+              <img src="assets/imgs/login.jpg" alt="">
+             
+              <div class="box-item-tour-content">
+                  <p class="box-item-tour-title">
+                    Rừng thông Đà Lạt
+                  </p>
+                <p class="box-item-tour-text">
+                  Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                </p>
+                  
+              </div>
+            </div>
+            <div class="box-item-tour">
+              <img src="assets/imgs/login.jpg" alt="">
+             
+              <div class="box-item-tour-content">
+                  <p class="box-item-tour-title">
+                    Rừng thông Đà Lạt
+                  </p>
+                <p class="box-item-tour-text">
+                  Nhắc đến Đà Lạt nhiều người sẽ nghĩ ngay đến thành phố ngàn hoa hay một xứ sở nhiều sương mù
+                </p>
+                  
+              </div>
+            </div>
+           </div>
+          <p class="box-list-tour-header">Khuyến mãi</p>
+          <div class="wide-as-needed">
+            <div class="box-item-promotion" routerLink="/sale">
+              <img src="assets/imgs/sale.png" alt="">
+            </div>
+            <div class="box-item-promotion" routerLink="/sale">
+              <img src="assets/imgs/sale.png" alt="">
+            </div>
+            <div class="box-item-promotion" routerLink="/sale">
+              <img src="assets/imgs/sale.png" alt="">
+            </div>
+           </div>
+      </div>
+  </section>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="save">
+          <ion-icon name="bookmark-outline" routerLink="/save"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="person">
+          <ion-icon name="person-outline" routerLink="/user"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+  </ion-footer>

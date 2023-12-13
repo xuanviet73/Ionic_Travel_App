@@ -1,0 +1,94 @@
+<!-- 
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>ACCOUNT</ion-card-subtitle>
+    <ion-card-title>{{message}}</ion-card-title>
+  </ion-card-header>
+  <ion-button (click)="DetailAccount()" fill="clear">Detail Account</ion-button>
+  <ion-button (click)="Camera()" fill="clear">Camera</ion-button>
+  <ion-button (click)="Map()" fill="clear">Map</ion-button>
+
+</ion-card> -->
+<ion-content>
+  <div>
+    <ion-icon class="btn-back" name="arrow-back-outline" routerLink="/home"></ion-icon>
+    <ion-icon class="btn-save" name="bookmark-outline" routerLink="/save"></ion-icon>
+
+    <div class="detail">
+      <ion-card-title class="bg-detail title-detail"
+        >Rừng thông Đà Lạt</ion-card-title
+      >
+      <div class="detail-rate">
+        <ion-card-content>
+          Đánh giá
+          <ion-icon color="warning" name="star"></ion-icon>
+          <ion-icon color="warning" name="star"></ion-icon>
+          <ion-icon color="warning" name="star"></ion-icon>
+          <ion-icon color="warning" name="star"></ion-icon>
+          <ion-icon color="warning" name="star"></ion-icon>
+        </ion-card-content>
+      </div>
+      <hr width="92%" size="1px" align="center" color="gray" />
+      <ion-card-title class="bg-detail"
+        ><b>1.200.000</b> VND/Pax</ion-card-title
+      >
+      <div>
+        <ion-button class="bg-detail btn-book" color="success" shape="round" routerLink="/payment"
+          >Chọn vé</ion-button
+        >
+      </div>
+      <div>
+        <ion-card-content>Thông tin chi tiết </ion-card-content>
+        <hr width="92%" size="1px" align="center" color="gray" />
+        <ion-card-content>
+          <b>Ngày khởi hành:</b>
+          <ion-input [(ngModel)]="dob" name="dob" type="date"></ion-input>
+        </ion-card-content>
+
+        <ion-card-content><b>Thời gian tour:</b> 
+          <p>- Tour sẽ kéo dài trong 3 ngày</p>
+          <p>- Tham quan Quảng trường Lâm Viên với không gian rộng lớn, thoáng mát hướng ra hồ Xuân Hương.</p>
+          <p>- Tham quan Khu du lịch sinh thái Cao Nguyên Hoa - trải nghiệm xích đu lớn nhất Việt Nam, chụp hình với dàn siêu xe cực chất, hồ bơi vô cực, tham quan vườn hoa hồng ngoại, hồng nội, hồng cổ thụ khoe sắc bốn mùa.</p>
+        </ion-card-content>
+
+        <ion-card-content
+          ><b>Phương tiện di chuyển:</b> Xe khách và đi bộ.</ion-card-content
+        >
+        <ion-card-content
+          ><b>Mô tả:</b> Đón quý khách tại văn phòng Saigontourist 45 Lê Thánh Tôn lúc 5h30 sáng hoặc 01 Nguyễn Chí Thanh lúc  6h00 sáng, khởi hành đi Đà Lạt. Đến Đà Lạt tham quan Quảng trường Lâm Viên với không gian rộng lớn, thoáng mát hướng ra hồ Xuân Hương cùng công trình nghệ thuật khối bông hoa dã quỳ và khối nụ hoa Atiso khổng lồ được thiết kế bằng kính màu rất đẹp mắt. Du khách tự do dạo thành phố Đà Lạt về đêm, thưởng thức nhịp sống phố núi. Nghỉ đêm tại Đà Lạt.
+          <p></p><b>Lựa chọn: (tự túc chi phí di chuyển và vé tham quan)</b>
+          <p>- Tham dự đêm giao lưu văn hóa cồng chiêng với người dân tộc Tây Nguyên và uống rượu Cần.</p>
+          <p>- Tham quan Vườn ánh sáng Lumiere - tổ hợp 7 khu giải trí với công nghệ 3D mapping đầy hư ảo.</p></ion-card-content
+        >
+      </div>
+      <div>
+        <ion-card-content><b>Đánh giá của bạn </b></ion-card-content>
+        <hr width="92%" size="1px" align="center" color="gray" />
+        <ion-item class="detail-form">
+          <ion-input
+            labelPlacement="stacked"
+            placeholder="Nhập đánh giá"
+          ></ion-input>
+          <ion-icon name="send"></ion-icon>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" routerLink="/home">
+        <ion-tab-button tab="home">
+          <ion-icon name="home"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="radio" routerLink="/save">
+          <ion-icon name="bookmark"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="library" routerLink="/user">
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
